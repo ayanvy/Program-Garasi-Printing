@@ -18,7 +18,7 @@ dapat diunggah lewat panel kiri.
 
 ## Struktur
 ```
-app.py                      antarmuka (4 halaman) - alur program
+app.py                      antarmuka (5 halaman) - alur program
 modules/data_loader.py      Modul 1: baca dan periksa matriks frekuensi
 modules/pearson_model.py    Modul 2: korelasi Pearson, uji t, koreksi Benjamini-Hochberg
 modules/kmeans_model.py     Modul 3: z-score, pemilihan K, K-Means, Silhouette/DBI/ARI, uji permutasi
@@ -37,6 +37,7 @@ Berkas .xlsx dengan sheet `Matriks_Frekuensi_Bulanan`, `Matriks_Frekuensi_Minggu
 3. **Pengelompokan Produk** - K otomatis (aturan peringkat Silhouette, DBI, ARI-LOO) atau pilih sendiri;
    anggota dan profil cluster, centroid, PCA, tabel evaluasi K, uji permutasi opsional; unduh Excel.
 4. **Ringkasan** - kesimpulan otomatis dan ketentuan membaca hasil.
+5. **Dashboard** - ringkasan visual dengan bahasa sederhana untuk pembaca awam: produk terlaris, tren ramai-sepi, kelompok produk dengan pola mirip, pasangan produk yang naik-turunnya sejalan atau berlawanan, dan penilaian seberapa kuat hasilnya. Memakai hasil perhitungan yang sama dengan halaman lain.
 
 ## Pengaturan model (sama dengan Bab IV)
 - Pearson: frekuensi asli, uji t dua sisi alpha 0,05, koreksi BH per matriks.
